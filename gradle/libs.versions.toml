@@ -1,6 +1,6 @@
 [versions]
-agp = "8.7.0-beta01"
-kotlin = "1.9.24"
+agp = "8.6.0"
+kotlin = "1.9.25"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
@@ -9,6 +9,7 @@ appcompat = "1.6.1"
 material = "1.10.0"
 
 [libraries]
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version = "1.7.0" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -18,5 +19,6 @@ material = { group = "com.google.android.material", name = "material", version.r
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version = "2.7.7" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
